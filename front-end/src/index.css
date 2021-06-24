@@ -1,0 +1,312 @@
+/*General settings*/
+
+html{
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  height: 100vh;
+  font-size: 1.6rem;
+  font-family: Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root{
+  height: 100%;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+a:hover{
+  color: #708090;
+}
+
+
+/*Container css*/
+
+.container{
+  display: grid;
+  grid-template-areas:
+    'header'
+    'main'
+    'footer';
+  grid-template-columns: 1fr;
+  grid-template-rows: 5rem 1fr 5rem;
+  height: 100%;
+}
+
+/*Header css*/
+header{
+  grid-area: 'header';
+  background-color: 	#191970;
+}
+
+.header{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.header a{
+  padding: 1rem;
+}
+
+/*Main css*/
+main{
+  grid-area: 'main';
+  padding: 1rem;
+  flex-wrap: wrap;
+}
+
+/*Footer css*/
+
+footer{
+  grid-area: 'footer';
+  background-color: #191970;
+  color: #708090;
+}
+
+.footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/*Home screen*/
+
+.home{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.cont2{
+  background-color:	#F8F8FF;
+  padding: 1.25rem;
+  margin-top: 2rem;
+  margin-right: 2rem;
+}
+
+.cont2 button{
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 0.1rem #cccc solid;
+  cursor: pointer;
+}
+
+.cont2 button:hover{
+  background-color: #708090;
+}
+
+.cont2 ul{
+  list-style-type: none;
+}
+
+.cont2 li{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.cont2 h1{
+  text-align: center;
+  color: #7B68EE;
+}
+
+.cont1{
+  padding: 1.25rem;
+ 
+}
+
+.sub1{
+  display: flex;
+  align-items: center;
+  background-color: #F8F8FF;
+  padding: 1.25rem;
+}
+
+.sub1 ul{
+  display: flex;
+}
+
+.sub1 li{
+  margin-left: 1.25rem;
+}
+
+.cont1 button{
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: #008080;
+  border: 0.1rem #cccc solid;
+  color: white;
+  cursor: pointer;
+}
+
+.cont1 button:hover{
+  background-color: #708090;
+}
+
+.cont1 ul{
+  list-style-type: none;
+}
+
+.cont1 li{
+  margin-bottom: 1rem;
+}
+
+.cont1 h1{
+  color: #7B68EE;
+}
+
+.cont1 h2{
+  color: 	#2F4F4F;
+}
+
+/*Form css*/
+
+.form{
+  max-width: 60rem;
+  margin: 0 auto;
+  background-color: #f8f8f8;
+  padding: 2rem;
+}
+
+.form > div{
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.form label {
+  margin: 1rem 0 ;
+  display: block;
+}
+
+.form button, input, textarea{
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 0.1rem #cccc solid;
+}
+
+.form button{
+  background-color:  #008080;
+  color: white;
+}
+
+.form button:hover{
+  background-color: #708090;
+}
+
+/*card css*/
+
+.card-news {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card{
+  border: 0.1rem #c0c0c0 solid;
+  background-color: #f8f8f8;
+  border-radius: 1.5rem;
+  margin: 1rem;
+  max-width: 30rem;
+  text-align: center;
+}
+
+.card-body{
+  padding: 1rem;
+}
+
+.card-body > *{
+  margin-bottom: 0.5rem;
+}
+
+.card-body h1{
+  color: #7B68EE;
+}
+
+.card-body p{
+  color: 	#2F4F4F;
+  font-size: 2rem;
+}
+
+.button-container{
+  margin-top: 2rem;
+}
+
+.button-container button{
+  border : none;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  background-color: #008080;
+  color: white;
+}
+
+.button-container button:hover{
+  background-color: #708090;
+}
+
+
+.image{
+  width: 100%;
+}
+
+/*Table css*/
+
+.table{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table thead{
+  background-color: #191970;
+  color: white;
+}
+
+.table td, .table th{
+  text-align: center;
+  padding: 1rem;
+}
+
+.table tbody tr:nth-of-type(odd){
+  background-color: #f4f4f4;
+}
+
+
+.table button {
+  margin: 0 0.2rem;
+  border : none;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  background-color: #008080;
+  color: white;
+}
+
+.table button:hover{
+  background-color: #708090;
+}
+
+.button-table button{
+  border : none;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  background-color: #008080;
+  color: white;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+
+

@@ -25,7 +25,7 @@ export default function HelpScreen(){
     }
     return(
         <div>
-            <form className="form" method="POST" onSubmit={submitHandler}>
+            <form className="form"  onSubmit={submitHandler}>
             <h2>Contato ao suporte</h2>
                 <div>
                     <label htmlFor="name"> Nome </label>
@@ -41,7 +41,7 @@ export default function HelpScreen(){
 
                 <div>
                     <label htmlFor="describe">Descrição do problema</label>
-                    <textarea id="describe" name="describe" cols="45" rows="5" required placeholder="Descrição do problema"
+                    <textarea id="describe" name="describe" rows="3" required placeholder="Descrição do problema"
                     value={describe} onChange={ e => setDescribe(e.target.value)}></textarea>
                 </div>
 
